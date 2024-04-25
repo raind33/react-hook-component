@@ -1,16 +1,27 @@
-import dayjs from 'dayjs';
+import React from 'react';
 import Calendar from './components/Calendar';
 import { IconAdd } from './components/Icon/IconAdd';
 import { createFromIconfont } from './components/Icon/createFrontIconfont';
-const IconFont = createFromIconfont('//at.alicdn.com/t/c/font_2321457_tjabignvdwn.js');
+import Space from './components/Space';
+import  './App.css';
+import { ConfigProvider } from './components/Space/ConfigProvider';
+
+
 function App() {
+ 
   return (
     <div className="App">
-       <IconFont type="r-shengdanbingqilin" spin size="40px"></IconFont>
-       <IconAdd spin size="40px"></IconAdd>
-      <Calendar locale='en-US' className="a" value={dayjs('2024-10-23')}></Calendar>
+      <ConfigProvider space={{size: 112}}>
+
+       <Space wrap  split={<div>23</div>} align='start' className="container">
+          <div className="box">3434</div>
+          <div className="box">999</div>
+          <div className="box">999</div>
+       </Space>
+      </ConfigProvider>
     </div>
   );
 }
 
 export default App;
+
