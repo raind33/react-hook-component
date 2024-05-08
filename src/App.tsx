@@ -1,27 +1,25 @@
-import React from 'react';
-import Calendar from './components/Calendar';
-import { IconAdd } from './components/Icon/IconAdd';
-import { createFromIconfont } from './components/Icon/createFrontIconfont';
-import Space from './components/Space';
-import  './App.css';
-import { ConfigProvider } from './components/Space/ConfigProvider';
+import Watermark from "./components/Watermark";
 
-
-function App() {
- 
-  return (
-    <div className="App">
-      <ConfigProvider space={{size: 112}}>
-
-       <Space wrap  split={<div>23</div>} align='start' className="container">
-          <div className="box">3434</div>
-          <div className="box">999</div>
-          <div className="box">999</div>
-       </Space>
-      </ConfigProvider>
-    </div>
-  );
-}
+const App = () => {
+  return <Watermark
+  gap={[0, 0]}
+  fontStyle={{
+      color: 'green'
+  }}
+  
+  offset={[50, 100]}
+    content={['8888', '232']}
+  >
+   <div style={{height: 800}}>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
+   </div>
+  </Watermark>
+};
 
 export default App;
-
