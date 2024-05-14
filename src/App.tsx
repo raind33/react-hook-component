@@ -1,25 +1,25 @@
-import Watermark from "./components/Watermark";
+import { ConfigProvider } from "./components/Message/ConfigProvider";
+import { useMessage } from "./components/Message/useMessage";
 
-const App = () => {
-  return <Watermark
-  gap={[0, 0]}
-  fontStyle={{
-      color: 'green'
-  }}
-  
-  offset={[50, 100]}
-    content={['8888', '232']}
-  >
-   <div style={{height: 800}}>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quod deserunt quidem quas in rem ipsam ut nesciunt asperiores dignissimos recusandae minus, eaque, harum exercitationem esse sapiente? Eveniet, id provident!</p>
-   </div>
-  </Watermark>
-};
+function Aaa() {
+  const message = useMessage();
+
+  return <button onClick={() =>{
+    message.add({
+      content:'请求成功'
+    })
+  }}>成功</button>
+}
+
+function App() {
+
+  return (
+    <ConfigProvider>
+      <div>
+        <Aaa></Aaa>
+      </div>
+    </ConfigProvider>
+  );
+}
 
 export default App;
