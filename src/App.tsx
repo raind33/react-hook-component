@@ -1,25 +1,18 @@
-import { ConfigProvider } from "./components/Message/ConfigProvider";
-import { useMessage } from "./components/Message/useMessage";
+import Popover from './components/Popover';
 
-function Aaa() {
-  const message = useMessage();
+export default function App() {
 
-  return <button onClick={() =>{
-    message.add({
-      content:'请求成功'
-    })
-  }}>成功</button>
+  const popoverContent = <div>
+    光光光
+    <button onClick={() => {alert(1)}}>111</button>
+  </div>;
+
+  return <Popover
+    content={popoverContent}
+    placement='bottom'
+    trigger='click'
+    style={{margin: '200px'}}
+  >
+    <button>点我点我</button>
+  </Popover>
 }
-
-function App() {
-
-  return (
-    <ConfigProvider>
-      <div>
-        <Aaa></Aaa>
-      </div>
-    </ConfigProvider>
-  );
-}
-
-export default App;
