@@ -1,4 +1,4 @@
-import Demo from './components/OnBoarding/demo';
+import Demo from './components/Upload/demo';
 
 export default function App() {
   return <Demo/>
