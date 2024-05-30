@@ -53,7 +53,7 @@ function Demo() {
               return document.getElementById('btn-group1');
             },
             renderContent: () => {
-              return "神说要有光";
+              return "111111";
             },
             placement: 'bottom'
           },
@@ -62,7 +62,7 @@ function Demo() {
               return document.getElementById('btn-group2');
             },
             renderContent: () => {
-              return "于是就有了光";
+              return "2222222";
             },
             placement: 'bottom'
           },
@@ -71,7 +71,7 @@ function Demo() {
               return document.getElementById('btn-group3');
             },
             renderContent: () => {
-              return "你相信光么";
+              return "333333";
             },
             placement: 'bottom'
           }

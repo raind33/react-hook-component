@@ -1,4 +1,4 @@
-import Demo from './components/Upload/demo';
+import Demo from './components/Form/demo';
 
 export default function App() {
   return <Demo/>

@@ -38,6 +38,9 @@ dependencies:
   antd:
     specifier: ^5.17.3
     version: 5.17.3(react-dom@18.3.1)(react@18.3.1)
+  async-validator:
+    specifier: ^4.2.5
+    version: 4.2.5
   axios:
     specifier: ^1.7.1
     version: 1.7.1
@@ -3605,6 +3608,10 @@ packages:
 
   /ast-types-flow@0.0.8:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
+    dev: false
+
+  /async-validator@4.2.5:
+    resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
     dev: false
 
   /async@3.2.5:
