@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {  Link, useLocation, RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
-import Keepalive, { useKeepOutlet } from './components/Keepalive';
+import Keepalive, { useKeepOutlet } from './index';
 
 const Layout = () => {
     const { pathname } = useLocation();
