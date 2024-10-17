@@ -1,4 +1,4 @@
-import { CSSProperties, FC, MutableRefObject, ReactNode, forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from "react";
+import React,  { CSSProperties, FC, MutableRefObject, ReactNode, forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from "react";
 import useStore, { MessageList } from "./useStore";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 

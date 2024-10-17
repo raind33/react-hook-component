@@ -1,4 +1,4 @@
-import { useRef, PropsWithChildren, CSSProperties, FC, useCallback, useEffect } from 'react';
+import React, { useRef, PropsWithChildren, CSSProperties, FC, useCallback, useEffect } from 'react';
 import useWatermark from './useWatermark';
 
 export interface WatermarkProps extends PropsWithChildren {

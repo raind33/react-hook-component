@@ -3,7 +3,7 @@ import cs from 'classnames';
 import MonthCalendar from './MonthCalendar';
 import './index.scss';
 import Header from './Header';
-import { CSSProperties, ReactNode, useState } from 'react';
+import React,  { CSSProperties, ReactNode, useState } from 'react';
 import LocaleContext from './locale/LocaleContext';
 
 export interface CalendarProps {

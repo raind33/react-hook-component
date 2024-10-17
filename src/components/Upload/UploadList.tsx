@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React,  { FC } from 'react'
 import { Progress } from 'antd';
 import { CheckOutlined, CloseOutlined, DeleteOutlined, FileOutlined, LoadingOutlined } from '@ant-design/icons';
 

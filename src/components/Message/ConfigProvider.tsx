@@ -1,4 +1,4 @@
-import { PropsWithChildren, RefObject, createContext, useRef } from "react";
+import React,  { PropsWithChildren, RefObject, createContext, useRef } from "react";
 import { MessageProvider, MessageRef } from ".";
 
 interface ConfigProviderProps {

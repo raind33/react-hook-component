@@ -1,4 +1,4 @@
-import { FC, useState, DragEvent, PropsWithChildren } from 'react'
+import React,  { FC, useState, DragEvent, PropsWithChildren } from 'react'
 import classNames from 'classnames'
 
 interface DraggerProps extends PropsWithChildren{

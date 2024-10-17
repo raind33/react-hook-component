@@ -10,7 +10,7 @@ import {
   flip,
   useHover,
 } from "@floating-ui/react";
-import { useRef, useState } from "react";
+import React,  { useRef, useState } from "react";
 import "./index.css";
 import { createPortal } from "react-dom";
 

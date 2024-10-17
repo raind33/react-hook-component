@@ -2,7 +2,7 @@ import { Dayjs } from "dayjs";
 import cs from "classnames";
 import { CalendarProps } from ".";
 import allLocales from "./locale";
-import { useContext } from "react";
+import React,  { useContext } from "react";
 import LocaleContext from "./locale/LocaleContext";
 
 interface MonthCalendarProps extends CalendarProps {

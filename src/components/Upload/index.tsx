@@ -1,4 +1,4 @@
-import { FC, useRef, ChangeEvent, PropsWithChildren, useState } from 'react'
+import React,  { FC, useRef, ChangeEvent, PropsWithChildren, useState } from 'react'
 import axios from 'axios'
 
 import './index.scss';

@@ -1,6 +1,6 @@
 import { OnBoarding } from '.'
 import { Button, Flex } from 'antd';
-
+import React from 'react';
 function Demo() {
 
   return <div className='App'>
