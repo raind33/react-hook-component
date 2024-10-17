@@ -64,7 +64,7 @@ const routes = [
   }
 ];
 
-export const router = createBrowserRouter(routes);
+export const router:any = createBrowserRouter(routes);
 
 const App = () => {
  

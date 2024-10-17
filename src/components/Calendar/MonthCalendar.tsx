@@ -77,8 +77,8 @@ function renderDays(
     }
     rows.push(row);
   }
-  return rows.map((row) => (
-    <div className="calendar-month-body-row">{row}</div>
+  return rows.map((row, index) => (
+    <div className="calendar-month-body-row" key={index}>{row}</div>
   ));
 }
 
