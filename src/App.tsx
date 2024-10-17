@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {  Link, useLocation, RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 import Keepalive, { useKeepOutlet } from './components/Keepalive';
 
@@ -64,7 +64,7 @@ const routes = [
   }
 ];
 
-export const router = createBrowserRouter(routes);
+export const router:any = createBrowserRouter(routes);
 
 const App = () => {
  

@@ -21,7 +21,7 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 options: {
-                    configFile: 'tsconfig.build.json'
+                    configFile: 'tsconfig.umd.json'
                 }
             },
             {

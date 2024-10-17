@@ -1,5 +1,5 @@
 import { createIcon } from './createIcon';
-
+import React from 'react';
 export const IconAdd = createIcon({
   content: (
     <>
